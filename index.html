@@ -19,11 +19,20 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <header>
-      <p>Welcome!</p>
+      <h3>~~~ 独步一下 ~~~</h3>
       <p>志, 当立于青天白云之上, 方可不沾染尘埃...</p>
     </header>
-    
-    <div class="box">
+
+    <nav>
+      <a href="#num1">1. Mac 可以清理的目录</a>
+      <a href="#num2">2. Emacs 简易教程</a>
+      <a href="#num3">3. Vimium 快捷键</a>
+      <a href="#num4">4. Linux 压缩命令</a>
+      <a href="#num5">5. fd 查询文件命令</a>
+      <a href="#num6">6. JSON 接口数据</a>
+    </nav>
+    <hr/>
+    <div id="num1" class="box">
       <h2>Mac 可以清理的目录</h2>
       <ul>
 	<li>~/Library/Caches</li>
@@ -31,7 +40,7 @@
       </ul>
     </div>
     <hr/>
-    <div class="box">
+    <div id="num2" class="box">
       <h2>Emacs 简易教程</h2>
       <ol>
 	<li>镜像源</li>
@@ -56,7 +65,27 @@
       </ol>
     </div>
     <hr/>
-    <div class="box">
+    <div id="num3" class="box">
+      <h2>Vimium 快捷键</h2>
+      <ul>
+	<li><code>j/k/h/l:</code> 下/上/左/右移动</li>
+	<li><code>d/u:</code> 上下跳动</li>
+	<li><code>J/K:</code> 切换左/右标签</li>
+	<li><code>x/X:</code> 关闭/恢复标签</li>
+	<li><code>H/L:</code> 历史记录后退/前进</li>
+	<li><code>t:</code> 创建新标签页</li>
+	<li><code>b:</code> 搜索书签</li>
+	<li><code>r:</code> 刷新页面</li>
+	<li><code>gg/G:</code> 回到顶部/尾部</li>
+	<li><code>^:</code> 上一个标签</li>
+	<li><code>?:</code> 查看所有快捷键</li>
+	<li><code>o(O):</code> 搜索查看收藏夹、历史记录中的页面，并打开（小写的o是在当前标签页打开，大写的O是在新标签页打开）</li>
+	<li><code>f(F):</code> 显示当前页面上所有可点击的链接，再输入相应字母就能打开这个页面（小写的f是在当前标签页打开，大写的F是在新标签页打开）</li>
+	<li><code>gi:</code> 将焦点聚集在第一个输入框(2gi就是第二个输入框)</li>
+      </ul>
+    </div>
+    <hr/>
+    <div id="num4" class="box">
       <h2>Linux 压缩命令</h2>
       <ol>
 	<li>打包压缩</li>
@@ -74,7 +103,7 @@
       </ol>
     </div>
     <hr/>
-    <div class="box">
+    <div id="num5" class="box">
       <h2>fd 查询文件命令</h2>
       <ul>
 	<li><code>-H, --hidden</code> 搜索隐藏的文件或目录</li>
@@ -87,6 +116,18 @@
 	<li><code>-e, --extension</code> 按文件扩展名过滤</li>
 
 	<li>example: <code>fd -t d -E node_modules react /</code></li>
+      </ul>
+    </div>
+    <hr/>
+    <div id="num6" class="box">
+      <h2>JSON 接口数据</h2>
+      <ul>
+	<li>
+	  <code>https://jsonplaceholder.typicode.com/posts</code>
+	  <p>
+	    <code>[{ userId: `number`, id: `number`, title: `some text`, body: `some text` }]</code>
+	  </p>
+	</li>
       </ul>
     </div>
     
