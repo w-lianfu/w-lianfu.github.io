@@ -1,0 +1,42 @@
+body, div, section, h2, p, ul, ol, li {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+h2 {
+  margin: 10px 0 0 0;
+}
+
+ul, ol {
+  margin: 10px 0 0 0;
+}
+
+hr {
+  height: 2px;
+  width: 100%;
+  border: none;
+  background: #ccc;
+}
+
+p {
+  padding: 3px 0;
+  margin: 0;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  padding: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}

@@ -13,11 +13,66 @@
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
     <title>独步一下</title>
     <!-- 支持 material icons, 支持 Open Sans 字体 -->
+    <link href="./main.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="home-page">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">Welcome!</div>
-    <div id="cover">志, 当立于青天白云之上, 方可不沾染尘埃...</div>
-    <div id="loading"></div>
+
+    <header>
+      <p>Welcome!</p>
+      <p>志, 当立于青天白云之上, 方可不沾染尘埃...</p>
+    </header>
+    
+    <div class="box">
+      <h2>Mac 可以清理的目录</h2>
+      <ul>
+	<li>~/Library/Caches</li>
+	<li>~/Library/Logs</li>
+      </ul>
+    </div>
+    <hr/>
+    <div class="box">
+      <h2>Emacs 简易教程</h2>
+      <ol>
+	<li>镜像源</li>
+	<ul>
+	  <li>
+	    <strong>官方源</strong><br/>
+	    <code>(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")("melpa" . "https://melpa.org/packages/")))</code>
+	  </li>
+	  <li>
+	    <strong>腾讯源(推荐)</strong><br/>
+	    <code>(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))</code>
+	  </li>
+	  <li>
+	    <strong>清华源</strong><br/>
+	    <code>(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))</code>
+	  </li>
+	  <li>
+	    <strong>Eamcs China源</strong><br/>
+	    <code>(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")("melpa" . "http://elpa.emacs-china.org/melpa/")))</code>
+	  </li>
+	</ul>
+      </ol>
+    </div>
+    <hr/>
+    <div class="box">
+      <h2>Linux 压缩命令</h2>
+      <ol>
+	<li>打包压缩</li>
+	<ul>
+	  <li>tar -zcvf pack.tar.gz pack/  #打包压缩为一个.gz格式的压缩包</li>
+	  <li>tar -jcvf pack.tar.bz2 pack/ #打包压缩为一个.bz2格式的压缩包</li>
+	  <li>tar -Jcvf pack.tar.xz pack/  #打包压缩为一个.xz格式的压缩包</li>
+	</ul>
+	<li>解压缩包</li>
+	<ul>
+	  <li>tar -zxvf pack.tar.gz /pack  #解包解压.gz格式的压缩包到pack文件夹</li>
+	  <li>tar -jxvf pack.tar.bz2 /pack #解包解压.bz2格式的压缩包到pack文件夹</li>
+	  <li>tar -Jxvf pack.tar.xz /pack  #解包解压.xz格式的压缩包到pack文件夹</li>
+	</ul>
+      </ol>
+    </div>
+    
   </body>
 </html>
