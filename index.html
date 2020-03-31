@@ -24,19 +24,37 @@
       <p>志, 当立于青天白云之上, 方可不沾染尘埃...</p>
     </header>
 
-    <nav>
-      <a href="#num1">1. Mac 可以清理的目录</a>
-      <a href="#num2">2. Emacs 简易教程</a>
-      <a href="#num3">3. Vimium 快捷键</a>
-      <a href="#num4">4. Linux 压缩命令</a>
-      <a href="#num5">5. fd 查询文件命令</a>
-      <a href="#num6">6. iterm2 常用快捷键</a>
-      <a href="#num7">7. homebrew 使用阿里源</a>
-      <a href="#num8">8. Vim 快捷键</a>
-      <a href="#num9">9. JSON 接口数据</a>
-      <a href="#num10">10. 我的网站</a>
-      <a href="#num11">11. Git 常用操作</a>
-    </nav>
+    <ol>
+      <li><a href="#num1">1. Mac 可以清理的目录</a></li>
+      <li>
+				<a href="#num2">2. Emacs 常用操作</a>
+				<ol>
+					<li><a href="#num21">镜像源</a></li>
+					<li><a href="#num22">重要功能</a></li>
+					<li><a href="#num23">基本操作</a></li>
+					<li><a href="#num24">搜索命令</a></li>
+					<li><a href="#num25">代码折叠</a></li>
+					<li><a href="#num26">treemacs 基本操作</a></li>
+					<li><a href="#num27">ibuffer 快捷键</a></li>
+					<li><a href="#num28">dired 基本操作</a></li>
+					<li><a href="#num29">emms 常用操作</a></li>
+					<li><a href="#num210">w3m 基本操作</a></li>
+					<li><a href="#num211">UTF-8 编码设置</a></li>
+					<li><a href="#num212">Emacs 帮助文档</a></li>
+					<li><a href="#num213">Emacs 学习资料</a></li>
+					<li><a href="#num214">Emacs 高手配置</a></li>
+				</ol>
+			</li>
+      <li><a href="#num3">3. Vimium 快捷键</a></li>
+      <li><a href="#num4">4. Linux 压缩命令</a></li>
+      <li><a href="#num5">5. fd 查询文件命令</a></li>
+      <li><a href="#num6">6. iterm2 常用快捷键</a></li>
+      <li><a href="#num7">7. homebrew 使用阿里源</a></li>
+      <li><a href="#num8">8. Vim 快捷键</a></li>
+      <li><a href="#num9">9. JSON 接口数据</a></li>
+      <li><a href="#num10">10. 我的网站</a></li>
+      <li><a href="#num11">11. Git 常用操作</a></li>
+    </ol>
     <hr/>
 
     <div id="num1" class="box">
@@ -50,7 +68,7 @@
     <div id="num2" class="box">
       <h2>Emacs 简易教程</h2>
       <ol>
-				<li>镜像源</li>
+				<li id="num21">镜像源</li>
 				<ul>
 					<li>
 						<strong>官方源</strong><br/>
@@ -71,7 +89,71 @@
 				</ul>
 				<br/>
 
-				<li>treemacs 基本操作</li>
+				<li id="num22">重要功能</li>
+				<ul>
+					<li>设置字体: <code>M-x set-frame-font 'Monaco'</code></li>
+					<li>随时切换主题: <code>M-x counsel-load-theme [themeName]</code></li>
+				</ul>
+				<br/>
+
+				<li id="num23">文本编辑命令</li>
+				<ul>
+					<li><code>Ctrl + a:</code> 移到命令行首</li>
+					<li><code>Ctrl + e:</code> 移到命令行尾</li>
+					<li><code>Ctrl + f:</code> 按字符前移（右向）</li>
+					<li><code>Ctrl + b:</code> 按字符后移（左向）</li>
+					<li><code>Meta + f:</code> 按单词前移（右向）</li>
+					<li><code>Meta + b:</code> 按单词后移（左向）</li>
+					<li><code>Meta + a: 移动到段落首</li>
+					<li><code>Meta + e: 移动到段落尾</li>
+					<li><code>Ctrl + xx:</code> 在命令行首和光标之间移动 (不可用)</li>
+					<li><code>Ctrl + u:</code> 从光标处删除至命令行首 (不可用)</li>
+					<li><code>Ctrl + _:</code> Undo</li>
+					<li><code>Ctrl + /:</code> Undo</li>
+					<li><code>Meta + _:</code> Redo</li>
+					<li><code>Ctrl + k:</code> 从光标处删除至命令行尾</li>
+					<li><code>Ctrl + w:</code> 从光标处删除至字首 (不可用)</li>
+					<li><code>Meta + d:</code> 从光标处删除至字尾</li>
+					<li><code>Ctrl + d:</code> 删除光标处的字符</li>
+					<li><code>Ctrl + h:</code> 删除光标前的字符(不可用)</li>
+					<li><code>Ctrl + y:</code> 粘贴至光标后</li>
+					<li><code>Meta + c:</code> 从光标处更改为首字母大写的单词</li>
+					<li><code>Meta + u:</code> 从光标处更改为全部大写的单词</li>
+					<li><code>Meta + l:</code> 从光标处更改为全部小写的单词</li>
+					<li><code>Ctrl + t:</code> 交换光标处和之前的字符</li>
+					<li><code>Meta + t:</code> 交换光标处和之前的单词</li>
+					<br/>
+					<li><code>C-x C-b:</code> List buffers</li>
+					<li><code>C-x b:</code> Switch to buffer</li>
+					<li><code>C-x s:</code> Save some buffers</li>
+					<li><code>C + shift + 2:</code> Mark set</li>
+					<br/>
+					<li><code>C-u + 3 + C-n:</code> 向下移动3行</li>
+					<li><code>C-u + 8 + C-f:</code> 向右移动8个字符</li>
+					<li><code>C-u + 8 + *:</code> 输入8个*</li>
+				</ul>
+				<br/>
+
+				<li id="num24">搜索命令</li>
+				<ul>
+					<li><code>Ctrl + s:</code> 向下搜索</li>
+					<li><code>Ctrl + p:</code> 向上搜索</li>
+					<li><code>Ctrl + g:</code> 中断命令</li>
+					<li><code>Meta + c:</code> 是否忽略大小写</li>
+				</ul>
+				<br/>
+
+				<li id="num25">代码折叠</li>
+				<ul>
+					<li><code>hs-show-all:</code> 显示所有的代码</li>
+					<li><code>hs-hide-all:</code> 折叠所有的代码</li>
+					<li><code>hs-show-block:</code> 显示当前代码区</li>
+					<li><code>hs-hide-block:</code> 折叠当前代码区</li>
+					<li><code>hs-toggle-hiding:</code> 折叠/显示当前代码区</li>
+				</ul>
+				<br/>
+
+				<li id="num26">treemacs 基本操作</li>
 				<ul>
 					<li><code>c d:</code> create dir</li>
 					<li><code>c f:</code> create file</li>
@@ -79,10 +161,12 @@
 					<li><code>g r:</code> refresh</li>
 					<li><code>Tab:</code> open & close</li>
 					<li><code>u:</code> go to parent</li>
+					<br/>
+					<li>If you use evil don’t forget to also install <code>treemacs-evil</code></li>
 				</ul>
 				<br/>
 
-				<li>buffer 快捷键</li>
+				<li id="num27">buffer 快捷键</li>
 				<ul>
 					<li><code>M-x ibuffer: </code> 进入buffer模式</li>
 					<li><code>S:</code> 保存被标记的buffer</li>
@@ -99,7 +183,7 @@
 				</ul>
 				<br/>
 
-				<li>dired 基本操作</li>
+				<li id="num28">dired 基本操作</li>
 				<ul>
 					<li><code>+</code> 创建子目录/文件</li>
 					<li><code>C</code> 拷贝文件</li>
@@ -114,7 +198,7 @@
 				</ul>
 				<br/>
 
-				<li>emms 常用操作</li>
+				<li id="num29">emms 常用操作</li>
 				<ul>
 					<li><code>a:</code> Add files in the playlist at point to the current playlist buffer. If we are in the current playlist, make a new playlist buffer and set it as current.</li>
 					<li><code>b:</code> Set the current playlist buffer.</li>
@@ -142,7 +226,60 @@
 				</ul>
 				<br/>
 
-				<li>Emacs 帮助文档</li>
+				<li id="num210">w3m 基本操作</li>
+				<ul>
+					<li><code>Q:</code> 关闭窗口</li>
+					<li><code>q:</code> 退出</li>
+					<li><code>C-x-k:</code> 关闭当前标签页</li>
+					<li><code>U:</code> 打开URL</li>
+					<li><code>V:</code> 打开文件</li>
+					<li><code>G:</code> 在标签页中打开一个网址</li>
+					<li><code>S:</code> 用google进行搜索</li>
+					<li><code>B:</code> 后退</li>
+					<li><code>N:</code> 前进</li>
+					<li><code>H:</code> 主页</li>
+					<li><code>R:</code> 刷新</li>
+					<li><code>Enter:</code> 打开链接</li>
+					<br/>
+					<li><code>C-n:</code> 下</li>
+					<li><code>C-p:</code> 上</li>
+					<li><code>C-b:</code> 后</li>
+					<li><code>C-f:</code> 前</li>
+					<li><code>C-v:</code> 向下滚屏</li>
+					<li><code>M-v:</code> 向上滚屏</li>
+					<li><code>>:</code> 向左滚屏</li>
+					<li><code><:</code> 向右滚屏</li>
+					<li><code>,:</code> 向左滚动一格</li>
+					<li><code>.:</code> 向右滚动一格</li>
+					<br/>
+					<li>M: 用外部浏览器打开当前页面</li>
+				</ul>
+				<br/>
+
+				<li id="num211">UTF-8 编码设置</li>
+				<ul>
+					<code>;; 设置emacs 使用 utf-8</code>
+					<code>(setq locale-coding-system 'utf-8)</code></br>
+					<code>;; 设置键盘输入时的字符编码</code></br>
+					<code>(set-keyboard-coding-system 'utf-8)</code></br>
+					<code>(set-selection-coding-system 'utf-8)</code></br>
+					<code>;; 文件默认保存为 utf-8</code></br>
+					<code>(set-buffer-file-coding-system 'utf-8)</code></br>
+					<code>(set-default buffer-file-coding-system 'utf8)</code></br>
+					<code>(set-default-coding-systems 'utf-8)</code></br>
+					<code>;; 解决粘贴中文出现乱码的问题</code><br/>
+					<code>(set-clipboard-coding-system 'utf-8)</code><br/>
+					<code>;; 终端中文乱码</code><br/>
+					<code>(set-terminal-coding-system 'utf-8)</code><br/>
+					<code>(modify-coding-system-alist 'process "*" 'utf-8)</code><br/>
+					<code>(setq default-process-coding-system '(utf-8 . utf-8))</code><br/>
+					<code>;; 解决文件目录的中文名乱码</code><br/>
+					<code>(setq-default pathname-coding-system 'utf-8)</code><br/>
+					<code>(set-file-name-coding-system 'utf-8)</code><br/>
+				</ul>
+				<br/>
+
+				<li id="num212">Emacs 帮助文档</li>
 				<ul>
 					<li><code>C-h k:</code> 查看某个快捷键（组合）的用处或者绑定的函数</li>
 					<li><code>C-h f:</code> 查看某个函数的作用，以及它绑定的快捷键</li>
@@ -151,7 +288,7 @@
 				</ul>
 				<br/>
 
-				<li>Emacs 学习资料</li>
+				<li id="num213">Emacs 学习资料</li>
 				<ul>
 					<li><a href="https://www.emacswiki.org/">Emacs Wiki</a></li>
 					<li><a href="https://emacs.stackexchange.com/">Emacs Stackexchange</a></li>
@@ -165,6 +302,7 @@
 					<li><a href="https://zilongshanren.com/learnemacs/">21天学会Emacs</a></li>
 					<li><a href="http://blog.lujun9972.win/blog/2016/12/10/emacs%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E7%A5%9E%E5%99%A8--dired%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E/index.html">dired mode 常用操作</a></li>
 					<br/>
+          <li><a href="https://www.spacemacs.org/">Spacemacs</a></li>
 					<li><a href="http://tuhdo.github.io/helm-intro.html">helm tutor</a></li>
 					<li><a href="http://web-mode.org/">web-mode</a></li>
 					<li><a href="https://company-mode.github.io/">company-mode</a></li>
@@ -172,6 +310,13 @@
 					<li><a href="https://www.gnu.org/software/emms/">Emms 官网</a></li>
 					<li><a href="https://www.gnu.org/software/emms/manual/#Quickstart-Guide">Emms 官方文档</a></li>
 				</ul>
+        <br/
+
+        <li>Emacs 高手配置</li>
+        <ul>
+          <li><a href="https://github.com/purcell/emacs.d">鼎鼎大名 purcell/emacs.d</a></li>
+          <li><a href="https://github.com/redguardtoo/emacs.d">国人的Emacs配置</a></li>
+        </ul>
 			</ol>
 		</div>
 		<hr/>
@@ -294,7 +439,7 @@
 					</li>
 				</ul>
 
-				<li>恢复 homebrew 镜像源</li>
+				<li>更换 homebrew 镜像源</li>
 				<ul>
 					<li>
 						<p>重置 <code>brew.git</code></p>
@@ -325,6 +470,8 @@
 						<code>出现Updating Homebrew的时候ctrl+c一下就行</code>
 					</li>
 				</ul>
+				<br/>
+				<p>本段转载自: <a href="https://www.cnblogs.com/trotl/p/11862796.html">https://www.cnblogs.com/trotl/p/11862796.html</a></p>
       </ol>
     </div>
     <hr/>
@@ -393,7 +540,6 @@
         <li><a href="http://wlianfu.com">wlianfu.com</a></li>
         <li><a href="http://wlianfu.vip">wlianfu.vip</a></li>
         <li><a href="https://youtube.h5lianfu.now.sh">youtube</a></li>
-        <li><a href="https://eel-app.h5lianfu.now.sh">eel-app</a></li>
         <li><a href="https://lotus-app.h5lianfu.now.sh">lotus-app</a></li>
       </ul>
     </div>
@@ -402,6 +548,7 @@
     <div id="num11" class="box">
       <h2>Git 常用操作</h2>
       <ul>
+        <li>更新分支: <code>git remote update origin --prune</code></li>
         <li><a href="https://www.jianshu.com/p/caa7ae962e16">git 命令使用分享</a></li>
       </ul>
     </div>
