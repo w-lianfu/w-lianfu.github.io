@@ -31,7 +31,9 @@
       <a href="#num4">4. Linux 压缩命令</a>
       <a href="#num5">5. fd 查询文件命令</a>
       <a href="#num6">6. iterm2 常用快捷键</a>
-      <a href="#num7">7. JSON 接口数据</a>
+      <a href="#num7">7. homebrew 解决安装速度慢的问题</a>
+      <a href="#num8">8. Vim 快捷键</a>
+      <a href="#num9">9. JSON 接口数据</a>
     </nav>
     <hr/>
 
@@ -197,8 +199,85 @@
 	<li><code>⌘ + r:</code> 清屏</li>
       </ul>
     </div>
+    <hr/>
 
-    <div id="num7" class="box">
+    <div id="num7">
+      <h2>解决brew安装速度慢的问题(替换homebrew镜像源)</h2>
+      <ol>
+	<li>替换 brew.git</li>
+	<ul>
+	  <li>
+	    <code>cd "$(brew --repo)"</code><br/>
+	    <code>git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git</code>
+	  </li>
+	</ul>
+
+	<li>替换 homebrew-core.git</li>
+	<ul>
+	  <li>
+	    <code>cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</code><br/>
+	    <code>git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git</code>
+	  </li>
+	</ul>
+
+	<li>终端输入命令</li>
+	<ul>
+	  <li>
+	    <p color="warning"><code>echo $SHELL</code>看输出结果是<code>/bin/zsh</code>还是<code>/bin/bash</code></p>
+	  </li>
+	  <li>
+	    <p><code>/bin/zsh</code> 替换 <code>homebrew-bottles:</code></p>
+	    <code>echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles' >> ~/.zshrc</code><br/>
+	    <code>source ~/.zshrc</code>
+	  </li>
+	  <li>
+	    <p><code>/bin/bash</code> 替换 <code>homebrew-bottles:</code></p>
+	    <code>echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bash_profile</code><br/>
+	    <code>source ~/.bash_profile</code>
+	  </li>
+	</ul>
+
+	<li>恢复 homebrew 镜像源</li>
+	<ul>
+	  <li>
+	    <p>重置 <code>brew.git</code></p>
+	    <code>cd "$(brew --repo)"</code><br/>
+	    <code>git remote set-url origin https://github.com/Homebrew/brew.git</code>
+	  </li>
+	  <li>
+	    <p>重置 <code>homebrew-core.git</code></p>
+	    <code>cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</code><br/>
+	    <code>git remote set-url origin https://github.com/Homebrew/homebrew-core.git</code>
+	  </li>
+	  <li>
+	    <p>重置 <code>homebrew-bottles</code></p>
+	    <p>将刚添加到 <code>~/.bash_profile</code> 文件的语句注释掉即可</p>
+	  </li>
+	</ul>
+
+	<li>解决 brew 安装包一直卡在 Updating Homebrew</li>
+	<ul>
+	  <li>
+	    <p>方法一: 关闭 brew 每次执行命令时的自动更新</p>
+	    <code>vim ~/.bash_profile</code><br/>
+	    <code># 新增一行</code><br/>
+	    <code>export HOMEBREW_NO_AUTO_UPDATE=true</code>
+	  </li>
+	  <li>
+	    <p>方法二:</p>
+	    <code>出现Updating Homebrew的时候ctrl+c一下就行</code>
+	  </li>
+	</ul>
+      </ol>
+    </div>
+    <hr/>
+
+    <div id="num8">
+      <h2>Vim 快捷键</h2>
+    </div>
+    <hr/>
+
+    <div id="num9" class="box">
       <h2>JSON 接口数据</h2>
       <ul>
 	<li>
