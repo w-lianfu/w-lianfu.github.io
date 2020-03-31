@@ -31,343 +31,378 @@
       <a href="#num4">4. Linux 压缩命令</a>
       <a href="#num5">5. fd 查询文件命令</a>
       <a href="#num6">6. iterm2 常用快捷键</a>
-      <a href="#num7">7. homebrew 解决安装速度慢的问题</a>
+      <a href="#num7">7. homebrew 使用阿里源</a>
       <a href="#num8">8. Vim 快捷键</a>
       <a href="#num9">9. JSON 接口数据</a>
+      <a href="#num10">10. 我的网站</a>
+      <a href="#num11">11. Git 常用操作</a>
     </nav>
     <hr/>
 
     <div id="num1" class="box">
       <h2>Mac 可以清理的目录</h2>
       <ul>
-	<li><code>~/Library/Caches</code></li>
-	<li><code>~/Library/Logs</code></li>
+	      <li><code>~/Library/Caches</code></li>
+	      <li><code>~/Library/Logs</code></li>
       </ul>
     </div>
     <hr/>
     <div id="num2" class="box">
       <h2>Emacs 简易教程</h2>
       <ol>
-	<li>镜像源</li>
-	<ul>
-	  <li>
-	    <strong>官方源</strong><br/>
-	    <code>(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")("melpa" . "https://melpa.org/packages/")))</code>
-	  </li>
-	  <li>
-	    <strong>腾讯源(推荐)</strong><br/>
-	    <code>(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))</code>
-	  </li>
-	  <li>
-	    <strong>清华源</strong><br/>
-	    <code>(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))</code>
-	  </li>
-	  <li>
-	    <strong>Eamcs China源</strong><br/>
-	    <code>(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")("melpa" . "http://elpa.emacs-china.org/melpa/")))</code>
-	  </li>
-	</ul>
-	<br/>
+				<li>镜像源</li>
+				<ul>
+					<li>
+						<strong>官方源</strong><br/>
+						<code>(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")("melpa" . "https://melpa.org/packages/")))</code>
+					</li>
+					<li>
+						<strong>腾讯源(推荐)</strong><br/>
+						<code>(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))</code>
+					</li>
+					<li>
+						<strong>清华源</strong><br/>
+						<code>(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))</code>
+					</li>
+					<li>
+						<strong>Eamcs China源</strong><br/>
+						<code>(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")("melpa" . "http://elpa.emacs-china.org/melpa/")))</code>
+					</li>
+				</ul>
+				<br/>
 
-	<li>treemacs 基本操作</li>
-	<ul>
-	  <li><code>c d:</code> create dir</li>
-	  <li><code>c f:</code> create file</li>
-	  <li><code>R:</code> rename</li>
-	  <li><code>g r:</code> refresh</li>
-	  <li><code>Tab:</code> open & close</li>
-	  <li><code>u:</code> go to parent</li>
-	</ul>
-	<br/>
+				<li>treemacs 基本操作</li>
+				<ul>
+					<li><code>c d:</code> create dir</li>
+					<li><code>c f:</code> create file</li>
+					<li><code>R:</code> rename</li>
+					<li><code>g r:</code> refresh</li>
+					<li><code>Tab:</code> open & close</li>
+					<li><code>u:</code> go to parent</li>
+				</ul>
+				<br/>
 
-	<li>buffer 快捷键</li>
-	<ul>
-	  <li><code>M-x ibuffer: </code> 进入buffer模式</li>
-	  <li><code>S:</code> 保存被标记的buffer</li>
-	  <li><code>v:</code> 在当前frame中查看被标记的buffer</li>
-	  <li><code>H:</code> 在一个新建的frame中查看被标记的buffer</li>
-	  <li><code>V:</code> 从文件中重新读取内容</li>
-	  <li><code>g:</code> 更新列表</li>
-	  <li><code>D:</code> 关闭被标记的buffer</li>
-	  <li><code>x:</code> 关闭所有被标记的buffer</li>
-	  <li><code>m:</code> 标记</li>
-	  <li><code>t:</code> 切换标记状态</li>
-	  <li><code>u:</code> 取消标记</li>
-	  <li><code>**:</code> 取消所有标记</li>
-	</ul>
-	<br/>
+				<li>buffer 快捷键</li>
+				<ul>
+					<li><code>M-x ibuffer: </code> 进入buffer模式</li>
+					<li><code>S:</code> 保存被标记的buffer</li>
+					<li><code>v:</code> 在当前frame中查看被标记的buffer</li>
+					<li><code>H:</code> 在一个新建的frame中查看被标记的buffer</li>
+					<li><code>V:</code> 从文件中重新读取内容</li>
+					<li><code>g:</code> 更新列表</li>
+					<li><code>D:</code> 关闭被标记的buffer</li>
+					<li><code>x:</code> 关闭所有被标记的buffer</li>
+					<li><code>m:</code> 标记</li>
+					<li><code>t:</code> 切换标记状态</li>
+					<li><code>u:</code> 取消标记</li>
+					<li><code>**:</code> 取消所有标记</li>
+				</ul>
+				<br/>
 
-	<li>dired 基本操作</li>
-	<ul>
-	  <li><code>+</code> 创建子目录/文件</li>
-	  <li><code>C</code> 拷贝文件</li>
-	  <li><code>D</code> 删除文件</li>
-	  <li><code>R</code> 重命名文件</li>
-	  <li><code>x</code> 删除被添加了flag的文件</li>
-	  <li><code>Z</code> 使用gzip压缩/解压缩文件</li>
-	  <br/>
-	  <li><code>f</code> 以编辑方式打开文件</li>
-	  <li><code>o</code> 在新窗口打开文件</li>
-	  <li><code>v</code> 以只读方式打开文件</li>
-	</ul>
-	<br/>
+				<li>dired 基本操作</li>
+				<ul>
+					<li><code>+</code> 创建子目录/文件</li>
+					<li><code>C</code> 拷贝文件</li>
+					<li><code>D</code> 删除文件</li>
+					<li><code>R</code> 重命名文件</li>
+					<li><code>x</code> 删除被添加了flag的文件</li>
+					<li><code>Z</code> 使用gzip压缩/解压缩文件</li>
+					<br/>
+					<li><code>f</code> 以编辑方式打开文件</li>
+					<li><code>o</code> 在新窗口打开文件</li>
+					<li><code>v</code> 以只读方式打开文件</li>
+				</ul>
+				<br/>
 
-	<li>emms 常用操作</li>
-	<ul>
-	  <li><code>a:</code> Add files in the playlist at point to the current playlist buffer. If we are in the current playlist, make a new playlist buffer and set it as current.</li>
-	  <li><code>b:</code> Set the current playlist buffer.</li>
-	  <li><code>n:</code> Start playing the next track in the playlist.</li>
-	  <li><code>p:</code> Start playing the previous track in the playlist.</li>
-	  <li><code>s:</code> Stop playing.</li>
-	  <li><code>p:</code> Pause</li>
-	  <li><code>>:</code> Seek ten seconds forward.</li>
-	  <li><code><:</code> Seek ten seconds backward.</li>
-	  <li><code>f:</code> Describe the currently playing track in the minibuffer.</li>
-	  <li><code>c:</code> Display the current track in the center of the screen.</li>
-	  <li><code>enter:</code> Start playing the track under point.</li>
-	  <li><code>space:</code> Scroll up a near full page.</li>
-	  <li><code>r:</code> Go to a randomly selected track in the playlist.</li>
-	  <li><code>q:</code> Put the interactive playlist buffer at the end of list of all buffers.</li>
-	  <li><code>C-x C-s:</code> Save the current playlist buffer to a file.</li>
-	  <li><code>?:</code> Describe the mode.</li>
-	  <br/>
-	  <li><code>m:</code> Marks the current track and sets point one line forward.</li>
-	  <li><code>U:</code> Unmarks all tracks in the playlist.</li>
-	  <li><code>t:</code> Toggle mark on the current track.</li>
-	  <li><code>D:</code> Deletes the marked tracks from the playlist.</li>
-	  <li><code>K:</code> Deletes the marked tracks from the playlist and places them in the <code>kill-ring</code>, so that you can <code>yank</code> into another playlist.</li>
-	  <li><code>W:</code> Adds the marked tracks to the <code>kill-ring</code>, so that you can <code>yank</code> them into another playlist.</li>
-	</ul>
-	<br/>
+				<li>emms 常用操作</li>
+				<ul>
+					<li><code>a:</code> Add files in the playlist at point to the current playlist buffer. If we are in the current playlist, make a new playlist buffer and set it as current.</li>
+					<li><code>b:</code> Set the current playlist buffer.</li>
+					<li><code>n:</code> Start playing the next track in the playlist.</li>
+					<li><code>p:</code> Start playing the previous track in the playlist.</li>
+					<li><code>s:</code> Stop playing.</li>
+					<li><code>p:</code> Pause</li>
+					<li><code>>:</code> Seek ten seconds forward.</li>
+					<li><code><:</code> Seek ten seconds backward.</li>
+					<li><code>f:</code> Describe the currently playing track in the minibuffer.</li>
+					<li><code>c:</code> Display the current track in the center of the screen.</li>
+					<li><code>enter:</code> Start playing the track under point.</li>
+					<li><code>space:</code> Scroll up a near full page.</li>
+					<li><code>r:</code> Go to a randomly selected track in the playlist.</li>
+					<li><code>q:</code> Put the interactive playlist buffer at the end of list of all buffers.</li>
+					<li><code>C-x C-s:</code> Save the current playlist buffer to a file.</li>
+					<li><code>?:</code> Describe the mode.</li>
+					<br/>
+					<li><code>m:</code> Marks the current track and sets point one line forward.</li>
+					<li><code>U:</code> Unmarks all tracks in the playlist.</li>
+					<li><code>t:</code> Toggle mark on the current track.</li>
+					<li><code>D:</code> Deletes the marked tracks from the playlist.</li>
+					<li><code>K:</code> Deletes the marked tracks from the playlist and places them in the <code>kill-ring</code>, so that you can <code>yank</code> into another playlist.</li>
+					<li><code>W:</code> Adds the marked tracks to the <code>kill-ring</code>, so that you can <code>yank</code> them into another playlist.</li>
+				</ul>
+				<br/>
 
-	<li>Emacs 帮助文档</li>
-	<ul>
-	  <li><code>C-h k:</code> 查看某个快捷键（组合）的用处或者绑定的函数</li>
-	  <li><code>C-h f:</code> 查看某个函数的作用，以及它绑定的快捷键</li>
-	  <li><code>C-h v:</code> 查看某个 Emacs 变量的值</li>
-	  <li><code>C-h t:</code> Emacs 内置教程</li>
-	</ul>
-	<br/>
+				<li>Emacs 帮助文档</li>
+				<ul>
+					<li><code>C-h k:</code> 查看某个快捷键（组合）的用处或者绑定的函数</li>
+					<li><code>C-h f:</code> 查看某个函数的作用，以及它绑定的快捷键</li>
+					<li><code>C-h v:</code> 查看某个 Emacs 变量的值</li>
+					<li><code>C-h t:</code> Emacs 内置教程</li>
+				</ul>
+				<br/>
 
-	<li>Emacs 学习资料</li>
-	<ul>
-	  <li><a href="https://www.emacswiki.org/">Emacs Wiki</a></li>
-	  <li><a href="https://emacs.stackexchange.com/">Emacs Stackexchange</a></li>
-	  <li><a href="https://planet.emacslife.com/">Planet Emacs</a></li>
-	  <li><a href="https://www.cnblogs.com/Open_Source/archive/2011/07/17/2108747.html">Org Mode 简明手册</a></li>
-	  <li><a href="https://www.cnblogs.com/GarfieldEr007/p/5588979.html">Org Mode 入门教程</a></li>
-	  <li><a href="https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org">一年成为 Emacs 高手</a></li>
-	  <li><a href="http://blog.lujun9972.win/blog/2016/12/11/w3m%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/index.html">w3m 常用操作</a></li>
-	  <li><a href="https://book.emacs-china.org/">Spacemacs Rocks 教程</a></li>
-	  <li><a href="https://zilongshanren.com/learnemacs/">21天学会Emacs</a></li>
-	  <li><a href="http://blog.lujun9972.win/blog/2016/12/10/emacs%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E7%A5%9E%E5%99%A8--dired%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E/index.html">dired 常用操作</a></li>
-	  <br/>
-	  <li><a href="http://tuhdo.github.io/helm-intro.html">helm tutor</a></li>
-	  <li><a href="http://web-mode.org/">web-mode</a></li>
-	  <li><a href="https://company-mode.github.io/">company-mode</a></li>
-	  <li><a href=""></a></li>
-	  <li><a href="https://www.gnu.org/software/emms/">Emms 官网</a></li>
-	  <li><a href="https://www.gnu.org/software/emms/manual/#Quickstart-Guide">Emms 官方文档</a></li>
-	</ul>
-      </ol>
-    </div>
-    <hr/>
+				<li>Emacs 学习资料</li>
+				<ul>
+					<li><a href="https://www.emacswiki.org/">Emacs Wiki</a></li>
+					<li><a href="https://emacs.stackexchange.com/">Emacs Stackexchange</a></li>
+					<li><a href="https://planet.emacslife.com/">Planet Emacs</a></li>
+          <li><a href="http://ergoemacs.org/emacs/emacs.html">Practical Emacs Tutorial</a></li>
+					<li><a href="https://www.cnblogs.com/Open_Source/archive/2011/07/17/2108747.html">Org Mode 简明手册</a></li>
+					<li><a href="https://www.cnblogs.com/GarfieldEr007/p/5588979.html">Org Mode 入门教程</a></li>
+					<li><a href="https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org">一年成为 Emacs 高手</a></li>
+					<li><a href="http://blog.lujun9972.win/blog/2016/12/11/w3m%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/index.html">w3m 常用操作</a></li>
+					<li><a href="https://book.emacs-china.org/">Spacemacs Rocks 教程</a></li>
+					<li><a href="https://zilongshanren.com/learnemacs/">21天学会Emacs</a></li>
+					<li><a href="http://blog.lujun9972.win/blog/2016/12/10/emacs%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E7%A5%9E%E5%99%A8--dired%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E/index.html">dired mode 常用操作</a></li>
+					<br/>
+					<li><a href="http://tuhdo.github.io/helm-intro.html">helm tutor</a></li>
+					<li><a href="http://web-mode.org/">web-mode</a></li>
+					<li><a href="https://company-mode.github.io/">company-mode</a></li>
+					<li><a href="https://github.com/auto-complete/auto-complete/blob/master/doc/manual.md">auto-complete</a></li>
+					<li><a href="https://www.gnu.org/software/emms/">Emms 官网</a></li>
+					<li><a href="https://www.gnu.org/software/emms/manual/#Quickstart-Guide">Emms 官方文档</a></li>
+				</ul>
+			</ol>
+		</div>
+		<hr/>
 
-    <div id="num3" class="box">
-      <h2>Vimium 快捷键</h2>
-      <ul>
-	<li><code>j/k/h/l:</code> 下/上/左/右移动</li>
-	<li><code>d/u:</code> 上下跳动</li>
-	<li><code>J/K:</code> 切换左/右标签</li>
-	<li><code>x/X:</code> 关闭/恢复标签</li>
-	<li><code>H/L:</code> 历史记录后退/前进</li>
-	<li><code>t:</code> 创建新标签页</li>
-	<li><code>b:</code> 搜索书签</li>
-	<li><code>r:</code> 刷新页面</li>
-	<li><code>gg/G:</code> 回到顶部/尾部</li>
-	<li><code>^:</code> 上一个标签</li>
-	<li><code>?:</code> 查看所有快捷键</li>
-	<li><code>o(O):</code> 搜索查看收藏夹、历史记录中的页面，并打开（小写的o是在当前标签页打开，大写的O是在新标签页打开）</li>
-	<li><code>f(F):</code> 显示当前页面上所有可点击的链接，再输入相应字母就能打开这个页面（小写的f是在当前标签页打开，大写的F是在新标签页打开）</li>
-	<li><code>gi:</code> 将焦点聚集在第一个输入框(2gi就是第二个输入框)</li>
-      </ul>
-    </div>
-    <hr/>
+		<div id="num3" class="box">
+			<h2>Vimium 快捷键</h2>
+			<ul>
+				<li><code>j/k/h/l:</code> 下/上/左/右移动</li>
+				<li><code>d/u:</code> 上下跳动</li>
+				<li><code>J/K:</code> 切换左/右标签</li>
+				<li><code>x/X:</code> 关闭/恢复标签</li>
+				<li><code>H/L:</code> 历史记录后退/前进</li>
+				<li><code>t:</code> 创建新标签页</li>
+				<li><code>b:</code> 搜索书签</li>
+				<li><code>r:</code> 刷新页面</li>
+				<li><code>gg/G:</code> 回到顶部/尾部</li>
+				<li><code>^:</code> 上一个标签</li>
+				<li><code>?:</code> 查看所有快捷键</li>
+				<li><code>o(O):</code> 搜索查看收藏夹、历史记录中的页面，并打开（小写的o是在当前标签页打开，大写的O是在新标签页打开）</li>
+				<li><code>f(F):</code> 显示当前页面上所有可点击的链接，再输入相应字母就能打开这个页面（小写的f是在当前标签页打开，大写的F是在新标签页打开）</li>
+				<li><code>gi:</code> 将焦点聚集在第一个输入框(2gi就是第二个输入框)</li>
+			</ul>
+		</div>
+		<hr/>
 
-    <div id="num4" class="box">
-      <h2>Linux 压缩命令</h2>
-      <ol>
-	<li>打包压缩</li>
-	<ul>
-	  <li>tar -zcvf pack.tar.gz pack/  #打包压缩为一个.gz格式的压缩包</li>
-	  <li>tar -jcvf pack.tar.bz2 pack/ #打包压缩为一个.bz2格式的压缩包</li>
-	  <li>tar -Jcvf pack.tar.xz pack/  #打包压缩为一个.xz格式的压缩包</li>
-	</ul>
-	<li>解压缩包</li>
-	<ul>
-	  <li>tar -zxvf pack.tar.gz /pack  #解包解压.gz格式的压缩包到pack文件夹</li>
-	  <li>tar -jxvf pack.tar.bz2 /pack #解包解压.bz2格式的压缩包到pack文件夹</li>
-	  <li>tar -Jxvf pack.tar.xz /pack  #解包解压.xz格式的压缩包到pack文件夹</li>
-	</ul>
-      </ol>
-    </div>
-    <hr/>
+		<div id="num4" class="box">
+			<h2>Linux 压缩命令</h2>
+			<ol>
+				<li>打包压缩</li>
+				<ul>
+					<li>tar -zcvf pack.tar.gz pack/  #打包压缩为一个.gz格式的压缩包</li>
+					<li>tar -jcvf pack.tar.bz2 pack/ #打包压缩为一个.bz2格式的压缩包</li>
+					<li>tar -Jcvf pack.tar.xz pack/  #打包压缩为一个.xz格式的压缩包</li>
+				</ul>
+				<li>解压缩包</li>
+				<ul>
+					<li>tar -zxvf pack.tar.gz /pack  #解包解压.gz格式的压缩包到pack文件夹</li>
+					<li>tar -jxvf pack.tar.bz2 /pack #解包解压.bz2格式的压缩包到pack文件夹</li>
+					<li>tar -Jxvf pack.tar.xz /pack  #解包解压.xz格式的压缩包到pack文件夹</li>
+				</ul>
+			</ol>
+		</div>
+		<hr/>
 
-    <div id="num5" class="box">
-      <h2>fd 查询文件命令</h2>
-      <ul>
-	<li><code>-H, --hidden</code> 搜索隐藏的文件或目录</li>
-	<li><code>-I, --no-ignore</code> 不要忽略.gitignore文件的匹配</li>
-	<li><code>-s, --case-sensitive</code> 区分大小写的搜索</li>
-	<li><code>-i, --ignore-case</code> 不区分大小写的搜索</li>
-	<li><code>-a, --absolute-path</code> 显示绝对路径而不是相对路径</li>
-	<li><code>-E</code> 忽略对指定目录的搜索</li>
+		<div id="num5" class="box">
+			<h2>fd 查询文件命令</h2>
+			<ul>
+				<li><code>-H, --hidden</code> 搜索隐藏的文件或目录</li>
+				<li><code>-I, --no-ignore</code> 不要忽略.gitignore文件的匹配</li>
+				<li><code>-s, --case-sensitive</code> 区分大小写的搜索</li>
+				<li><code>-i, --ignore-case</code> 不区分大小写的搜索</li>
+				<li><code>-a, --absolute-path</code> 显示绝对路径而不是相对路径</li>
+				<li><code>-E</code> 忽略对指定目录的搜索</li>
 
-	<li><code>-t, --type</code> 按类型过滤: 文件f, 目录d, 空e, 可执行x</li>
-	<li><code>-e, --extension</code> 按文件扩展名过滤</li>
+				<li><code>-t, --type</code> 按类型过滤: 文件f, 目录d, 空e, 可执行x</li>
+				<li><code>-e, --extension</code> 按文件扩展名过滤</li>
 
-	<li>example: <code>fd -t d -E node_modules react /</code></li>
-      </ul>
-    </div>
-    <hr/>
+				<li>example: <code>fd -t d -E node_modules react /</code></li>
+			</ul>
+		</div>
+		<hr/>
 
-    <div id="num6" class="box">
-      <h2>iterm2 常用快捷键</h2>
-      <ul>
-	<li><code>⌘ + t:</code> 新建标签页</li>
-	<li><code>⌘ + w:</code> 关闭标签页</li>
-	<li><code>⌘ + 数字/⌘ + 左右方向键:</code> 切换标签</li>
-	<li><code>⌘ + enter:</code> 切换全屏</li>
-	<li><code>⌘ + f:</code> 查找</li>
-	<br/>
-	<li><code>⌘ + d:</code> 垂直分页</li>
-	<li><code>⌘ + shift + d:</code> 水平分页</li>
-	<li><code>⌘ + alt + d:</code> 切换屏幕</li>
-	<li><code>⌘ + ;</code> 查看历史命令</li>
-	<li><code>⌘ + shift + h:</code> 查看剪贴板历史</li>
-	<br/>
-	<li><code>ctrl + u:</code> 清除当前行</li>
-	<li><code>ctrl + p:</code> 上一条命令</li>
-	<li><code>ctrl + r:</code> 搜索命令历史</li>
-	<li><code>ctrl + l:</code> 清屏</li>
-	<li><code>⌘ + r:</code> 清屏</li>
-      </ul>
-    </div>
-    <hr/>
+		<div id="num6" class="box">
+			<h2>iterm2 常用快捷键</h2>
+			<ul>
+				<li><code>⌘ + t:</code> 新建标签页</li>
+				<li><code>⌘ + w:</code> 关闭标签页</li>
+				<li><code>⌘ + 数字/⌘ + 左右方向键:</code> 切换标签</li>
+				<li><code>⌘ + enter:</code> 切换全屏</li>
+				<li><code>⌘ + f:</code> 查找</li>
+				<br/>
+				<li><code>⌘ + d:</code> 垂直分页</li>
+				<li><code>⌘ + shift + d:</code> 水平分页</li>
+				<li><code>⌘ + alt + d:</code> 切换屏幕</li>
+				<li><code>⌘ + ;</code> 查看历史命令</li>
+				<li><code>⌘ + shift + h:</code> 查看剪贴板历史</li>
+				<br/>
+				<li><code>ctrl + u:</code> 清除当前行</li>
+				<li><code>ctrl + p:</code> 上一条命令</li>
+				<li><code>ctrl + r:</code> 搜索命令历史</li>
+				<li><code>ctrl + l:</code> 清屏</li>
+				<li><code>⌘ + r:</code> 清屏</li>
+			</ul>
+		</div>
+		<hr/>
 
-    <div id="num7">
-      <h2>解决brew安装速度慢的问题(替换homebrew镜像源)</h2>
-      <ol>
-	<li>替换 brew.git</li>
-	<ul>
-	  <li>
-	    <code>cd "$(brew --repo)"</code><br/>
-	    <code>git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git</code>
-	  </li>
-	</ul>
+		<div id="num7" class="box">
+			<h2>homebrew 切换阿里源(解决brew安装网络慢的问题)</h2>
+			<ol>
+				<li>替换 brew.git</li>
+				<ul>
+					<li>
+						<code>cd "$(brew --repo)"</code><br/>
+						<code>git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git</code>
+					</li>
+				</ul>
 
-	<li>替换 homebrew-core.git</li>
-	<ul>
-	  <li>
-	    <code>cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</code><br/>
-	    <code>git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git</code>
-	  </li>
-	</ul>
+				<li>替换 homebrew-core.git</li>
+				<ul>
+					<li>
+						<code>cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</code><br/>
+						<code>git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git</code>
+					</li>
+				</ul>
 
-	<li>终端输入命令</li>
-	<ul>
-	  <li>
-	    <p color="warning"><code>echo $SHELL</code>看输出结果是<code>/bin/zsh</code>还是<code>/bin/bash</code></p>
-	  </li>
-	  <li>
-	    <p><code>/bin/zsh</code> 替换 <code>homebrew-bottles:</code></p>
-	    <code>echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles' >> ~/.zshrc</code><br/>
-	    <code>source ~/.zshrc</code>
-	  </li>
-	  <li>
-	    <p><code>/bin/bash</code> 替换 <code>homebrew-bottles:</code></p>
-	    <code>echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bash_profile</code><br/>
-	    <code>source ~/.bash_profile</code>
-	  </li>
-	</ul>
+				<li>终端输入命令</li>
+				<ul>
+					<li>
+						<p color="warning"><code>echo $SHELL</code>看输出结果是<code>/bin/zsh</code>还是<code>/bin/bash</code></p>
+					</li>
+					<li>
+						<p><code>/bin/zsh</code> 替换 <code>homebrew-bottles:</code></p>
+						<code>echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles' >> ~/.zshrc</code><br/>
+						<code>source ~/.zshrc</code>
+					</li>
+					<li>
+						<p><code>/bin/bash</code> 替换 <code>homebrew-bottles:</code></p>
+						<code>echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bash_profile</code><br/>
+						<code>source ~/.bash_profile</code>
+					</li>
+				</ul>
 
-	<li>恢复 homebrew 镜像源</li>
-	<ul>
-	  <li>
-	    <p>重置 <code>brew.git</code></p>
-	    <code>cd "$(brew --repo)"</code><br/>
-	    <code>git remote set-url origin https://github.com/Homebrew/brew.git</code>
-	  </li>
-	  <li>
-	    <p>重置 <code>homebrew-core.git</code></p>
-	    <code>cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</code><br/>
-	    <code>git remote set-url origin https://github.com/Homebrew/homebrew-core.git</code>
-	  </li>
-	  <li>
-	    <p>重置 <code>homebrew-bottles</code></p>
-	    <p>将刚添加到 <code>~/.bash_profile</code> 文件的语句注释掉即可</p>
-	  </li>
-	</ul>
+				<li>恢复 homebrew 镜像源</li>
+				<ul>
+					<li>
+						<p>重置 <code>brew.git</code></p>
+						<code>cd "$(brew --repo)"</code><br/>
+						<code>git remote set-url origin https://github.com/Homebrew/brew.git</code>
+					</li>
+					<li>
+						<p>重置 <code>homebrew-core.git</code></p>
+						<code>cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"</code><br/>
+						<code>git remote set-url origin https://github.com/Homebrew/homebrew-core.git</code>
+					</li>
+					<li>
+						<p>重置 <code>homebrew-bottles</code></p>
+						<p>将刚添加到 <code>~/.bash_profile</code> 文件的语句注释掉即可</p>
+					</li>
+				</ul>
 
-	<li>解决 brew 安装包一直卡在 Updating Homebrew</li>
-	<ul>
-	  <li>
-	    <p>方法一: 关闭 brew 每次执行命令时的自动更新</p>
-	    <code>vim ~/.bash_profile</code><br/>
-	    <code># 新增一行</code><br/>
-	    <code>export HOMEBREW_NO_AUTO_UPDATE=true</code>
-	  </li>
-	  <li>
-	    <p>方法二:</p>
-	    <code>出现Updating Homebrew的时候ctrl+c一下就行</code>
-	  </li>
-	</ul>
+				<li>解决 brew 安装包一直卡在 Updating Homebrew</li>
+				<ul>
+					<li>
+						<p>方法一: 关闭 brew 每次执行命令时的自动更新</p>
+						<code>vim ~/.bash_profile</code><br/>
+						<code># 新增一行</code><br/>
+						<code>export HOMEBREW_NO_AUTO_UPDATE=true</code>
+					</li>
+					<li>
+						<p>方法二:</p>
+						<code>出现Updating Homebrew的时候ctrl+c一下就行</code>
+					</li>
+				</ul>
       </ol>
     </div>
     <hr/>
 
     <div id="num8" class="box">
       <h2>Vim 快捷键</h2>
-      <ul>
-				<li><code>ctrl+f:</code> 下翻一屏</li>
-				<li><code>ctrl+b:</code> 上翻一屏</li>
-				<li><code>ctrl+d:</code> 下翻半屏</li>
-				<li><code>ctrl+u:</code> 上翻半屏</li>
-				<li><code>ctrl+e:</code> 向下滚动一行</li>
-				<li><code>ctrl+y:</code> 向上滚动一行</li>
-				<li><code>n%:</code> 到文件n%的位置</li>
-				<li><code>zz:</code> 将当前行移动到屏幕中央</li>
-				<li><code>zt:</code> 将当前行移动到屏幕顶端</li>
-				<li><code>zb:</code> 将当前行移动到屏幕底端</li>
-				<br/>
-				<li><code>0:</code> 移动到行首</li>
-				<li><code>g0:</code> 移到光标所在屏幕行行首</li>
-				<li><code>^:</code> 移动到本行第一个非空白字符</li>
-				<li><code>g^:</code> 同 ^ ，但是移动到当前屏幕行第一个非空字符处</li>
-				<li><code>$:</code> 移动到行尾</li>
-				<li><code>g$:</code> 移动光标所在屏幕行行尾</li>
-				<li><code>n|:</code> 把光标移到递n列上</li>
-				<li><code>nG:</code> 到文件第n行</li>
-				<li><code>:n[number]</code> 移动到第n行</li>
-				<li><code>:$[number]</code> 移动到最后一行</li>
-				<li><code>H: </code> 把光标移到屏幕最顶端一行</li>
-				<li><code>M: </code> 把光标移到屏幕中间一行</li>
-				<li><code>L: </code> 把光标移到屏幕最底端一行</li>
-				<li><code>gg:</code> 到文件头部</li>
-				<li><code>G: </code> 到文件尾部</li>
-      </ul>
+      <ol>
+        <li>常用快捷键</li>
+        <ul>
+	  			<li><code>ctrl+f:</code> 下翻一屏</li>
+		  		<li><code>ctrl+b:</code> 上翻一屏</li>
+  				<li><code>ctrl+d:</code> 下翻半屏</li>
+  				<li><code>ctrl+u:</code> 上翻半屏</li>
+  				<li><code>ctrl+e:</code> 向下滚动一行</li>
+  				<li><code>ctrl+y:</code> 向上滚动一行</li>
+  				<li><code>n%:</code> 到文件n%的位置</li>
+  				<li><code>zz:</code> 将当前行移动到屏幕中央</li>
+  				<li><code>zt:</code> 将当前行移动到屏幕顶端</li>
+  				<li><code>zb:</code> 将当前行移动到屏幕底端</li>
+  				<br/>
+  				<li><code>0:</code> 移动到行首</li>
+  				<li><code>g0:</code> 移到光标所在屏幕行行首</li>
+  				<li><code>^:</code> 移动到本行第一个非空白字符</li>
+  				<li><code>g^:</code> 同 ^ ，但是移动到当前屏幕行第一个非空字符处</li>
+  				<li><code>$:</code> 移动到行尾</li>
+  				<li><code>g$:</code> 移动光标所在屏幕行行尾</li>
+  				<li><code>n|:</code> 把光标移到递n列上</li>
+  				<li><code>nG:</code> 到文件第n行</li>
+  				<li><code>:n[number]</code> 移动到第n行</li>
+  				<li><code>:$[number]</code> 移动到最后一行</li>
+  				<li><code>H: </code> 把光标移到屏幕最顶端一行</li>
+  				<li><code>M: </code> 把光标移到屏幕中间一行</li>
+  				<li><code>L: </code> 把光标移到屏幕最底端一行</li>
+  				<li><code>gg:</code> 到文件头部</li>
+  				<li><code>G: </code> 到文件尾部</li>
+        </ul>
+        <br/>
+
+        <li>Vim 学习资料</li>
+        <ul>
+          <li><a href="https://vimawesome.com/">Vim Awesome</a></li>
+          <li><a href="https://www.jianshu.com/p/ab77a1f7aa7c">Vim命令大全</a></li>
+        </ul>
+      </ol>
     </div>
     <hr/>
 
     <div id="num9" class="box">
       <h2>JSON 接口数据</h2>
       <ul>
-	<li>
-	  <code>https://jsonplaceholder.typicode.com/posts</code>
-	  <p>
-	    <code>[{ userId: `number`, id: `number`, title: `some text`, body: `some text` }]</code>
-	  </p>
-	</li>
+				<li>
+					<code>https://jsonplaceholder.typicode.com/posts</code>
+					<p>
+						<code>[{ userId: `number`, id: `number`, title: `some text`, body: `some text` }]</code>
+					</p>
+				</li>
+      </ul>
+    </div>
+    <hr/>
+
+    <div id="num10" class="box">
+      <h2>我的网站</h2>
+      <ul>
+        <li><a href="https://github.com/w-lianfu">Github</a></li>
+        <li><a href="https://w-lianfu.github.io/">Blog</a></li>
+        <li><a href="http://wlianfu.com">wlianfu.com</a></li>
+        <li><a href="http://wlianfu.vip">wlianfu.vip</a></li>
+        <li><a href="https://youtube.h5lianfu.now.sh">youtube</a></li>
+        <li><a href="https://eel-app.h5lianfu.now.sh">eel-app</a></li>
+        <li><a href="https://lotus-app.h5lianfu.now.sh">lotus-app</a></li>
+      </ul>
+    </div>
+    <hr/>
+
+    <div id="num11" class="box">
+      <h2>Git 常用操作</h2>
+      <ul>
+        <li><a href="https://www.jianshu.com/p/caa7ae962e16">git 命令使用分享</a></li>
       </ul>
     </div>
 
