@@ -38,11 +38,13 @@
 					<li><a href="#num27">ibuffer 快捷键</a></li>
 					<li><a href="#num28">dired 基本操作</a></li>
 					<li><a href="#num29">emms 常用操作</a></li>
-					<li><a href="#num210">w3m 基本操作</a></li>
-					<li><a href="#num211">UTF-8 编码设置</a></li>
-					<li><a href="#num212">Emacs 帮助文档</a></li>
-					<li><a href="#num213">Emacs 学习资料</a></li>
-					<li><a href="#num214">Emacs 高手配置</a></li>
+					<li><a href="#num210">Bongo 基本操作</a></li>
+					<li><a href="#num211">w3m 基本操作</a></li>
+					<li><a href="#num212">UTF-8 编码设置</a></li>
+					<li><a href="#num213">Emacs 帮助文档</a></li>
+					<li><a href="#num214">Emacs 学习资料</a></li>
+					<li><a href="#num215">Emacs 官方学习资料</a></li>
+					<li><a href="#num216">Emacs 高手配置</a></li>
 				</ol>
 			</li>
       <li><a href="#num3">3. Vimium 快捷键</a></li>
@@ -226,7 +228,49 @@
 				</ul>
 				<br/>
 
-				<li id="num210">w3m 基本操作</li>
+				<li id="num210">Bongo 基本操作</li>
+				<ul>
+					<li><code>i:</code> Insert a track (or a directory tree full of tracks).</li>
+					<li><code>RET:</code> Start playing the track at point (and then continue).</li>
+					<li><code>SPC:</code> Pause playback (if supported by the backend).</li>
+					<li><code>C-c C-s:</code> Stop playback (or start, if already stopped).</li>
+					<li><code>C-c C-n:</code> Start playing the next track.</li>
+					<li><code>C-c C-r:</code> Start playing a random track.</li>
+					<li><code>s:</code> Seek backward or forward (if supported by the backend).</li>
+					<li><code>l:</code> Move point to the current track and recenter.</li>
+					<li><code>q:</code> Quit Bongo (bury Bongo buffers and delete windows).</li>
+					<br/>
+					<li><code>c:</code> Copy the track or section under point.</li>
+					<li><code>k:</code> Kill the track or section under point.</li>
+					<li><code>C-w:</code> Kill all tracks and sections in the region.</li>
+					<li><code>y:</code> Reinsert the last copied or killed stuff.</li>
+					<li><code>I u:</code> Insert a URI (can be used to play podcasts and radio).</li>
+					<li><code>I TAB:</code> List other kinds of tracks that can be inserted.</li>
+					<br/>
+					<li><code>2 C-c C-n:</code> Skip the next track and start playing the one after that.</li>
+					<li><code>3 C-c C-s:</code> Stop playback after the next three tracks finish playing.</li>
+					<li><code>3 RET:</code> Start playing the track under point, and continue playing tracks, but stop after playing the third track.</li>
+					<li><code>C-u C-c C-s:</code> Stop playback after each track finishes playing (this is good when playing movies, for example).</li>
+					<li><code>C-u C-u C-c C-s:</code> Stop playback after the track at point finishes playing.</li>
+					<li><code>C-u C-c C-n:</code> Play the next track after each track finishes playing(this undoes the effect of <code>C-u C-c C-s:</code>).</li>
+					<li><code>C-u C-c C-r:</code> Play tracks in random order.</li>
+					<br/>
+					<li><code>h</code> Switch from playlist to library (or vice versa).</li>
+					<li><code>C-u h</code> Switch from playlist to library (or vice versa), leaving the original buffer visible in another window.</li>
+					<li><code>e</code> Append the track under point or the region (if active) to the end of the playlist buffer.</li>
+					<li><code>3 e</code> Append the track at point and the two after that to the end of the playlist buffer.</li>
+					<li><code>E</code> Insert the track under point or the region (if active) into the playlist buffer, directly below the track that's currently playing.</li>
+					<li><code>C-x C-s'</code> Save the current buffer (library buffers are stored using the `.bongo-library' file extension).</li>
+					<br/>
+					<li><code>d</code> Open a Dired buffer containing the track under point.</li>
+					<li><code>r</code> Rename the file corresponding to the track under point.</li>
+					<li><code>v</code> Change audio volume (requires the `volume-el' package).</li>
+					<br/>
+					<li>Bongo Github: <a href="https://github.com/dbrock/bongo">https://github.com/dbrock/bongo</a></li>
+				</ul>
+				<br/>
+
+				<li id="num211">w3m 基本操作</li>
 				<ul>
 					<li><code>Q:</code> 关闭窗口</li>
 					<li><code>q:</code> 退出</li>
@@ -256,7 +300,7 @@
 				</ul>
 				<br/>
 
-				<li id="num211">UTF-8 编码设置</li>
+				<li id="num212">UTF-8 编码设置</li>
 				<ul>
 					<code>;; 设置emacs 使用 utf-8</code>
 					<code>(setq locale-coding-system 'utf-8)</code></br>
@@ -279,7 +323,7 @@
 				</ul>
 				<br/>
 
-				<li id="num212">Emacs 帮助文档</li>
+				<li id="num213">Emacs 帮助文档</li>
 				<ul>
 					<li><code>C-h k:</code> 查看某个快捷键（组合）的用处或者绑定的函数</li>
 					<li><code>C-h f:</code> 查看某个函数的作用，以及它绑定的快捷键</li>
@@ -288,7 +332,7 @@
 				</ul>
 				<br/>
 
-				<li id="num213">Emacs 学习资料</li>
+				<li id="num214">Emacs 学习资料</li>
 				<ul>
 					<li><a href="https://www.emacswiki.org/">Emacs Wiki</a></li>
 					<li><a href="https://emacs.stackexchange.com/">Emacs Stackexchange</a></li>
@@ -298,10 +342,14 @@
 					<li><a href="https://www.cnblogs.com/GarfieldEr007/p/5588979.html">Org Mode 入门教程</a></li>
 					<li><a href="https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org">一年成为 Emacs 高手</a></li>
 					<li><a href="http://blog.lujun9972.win/blog/2016/12/11/w3m%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/index.html">w3m 常用操作</a></li>
-					<li><a href="https://book.emacs-china.org/">Spacemacs Rocks 教程</a></li>
-					<li><a href="https://zilongshanren.com/learnemacs/">21天学会Emacs</a></li>
+					<li><a href="https://book.emacs-china.org/">Spacemacs Rocks in 21 Days</a></li>
 					<li><a href="http://blog.lujun9972.win/blog/2016/12/10/emacs%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E7%A5%9E%E5%99%A8--dired%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E/index.html">dired mode 常用操作</a></li>
 					<br/>
+				</ul>
+				<br/>
+
+				<li id="num215">Emacs 官方学习资料</li>
+				<ul>
           <li><a href="https://www.spacemacs.org/">Spacemacs</a></li>
 					<li><a href="http://tuhdo.github.io/helm-intro.html">helm tutor</a></li>
 					<li><a href="http://web-mode.org/">web-mode</a></li>
@@ -309,10 +357,11 @@
 					<li><a href="https://github.com/auto-complete/auto-complete/blob/master/doc/manual.md">auto-complete</a></li>
 					<li><a href="https://www.gnu.org/software/emms/">Emms 官网</a></li>
 					<li><a href="https://www.gnu.org/software/emms/manual/#Quickstart-Guide">Emms 官方文档</a></li>
+					<li><a href="https://www.emacswiki.org/emacs/MusicPlayers">Emacs music players</a></li>
 				</ul>
-        <br/
+				<br/>
 
-        <li>Emacs 高手配置</li>
+        <li id="num216">Emacs 高手配置</li>
         <ul>
           <li><a href="https://github.com/purcell/emacs.d">鼎鼎大名 purcell/emacs.d</a></li>
           <li><a href="https://github.com/redguardtoo/emacs.d">国人的Emacs配置</a></li>
@@ -391,6 +440,7 @@
 				<li><code>⌘ + d:</code> 垂直分页</li>
 				<li><code>⌘ + shift + d:</code> 水平分页</li>
 				<li><code>⌘ + alt + d:</code> 切换屏幕</li>
+				<li><code>⌘ + alt + 方向键:</code> 切换到指定位置的分屏</li>
 				<li><code>⌘ + ;</code> 查看历史命令</li>
 				<li><code>⌘ + shift + h:</code> 查看剪贴板历史</li>
 				<br/>
