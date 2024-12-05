@@ -5,4 +5,4 @@
 #+OPTIONS: w-lianfu.github.io
 
 * ~~~ w-lianfu's blog ~~~
-  + [[w-lianfu.github.io]]
+  + [[https://w-lianfu.github.io]]
