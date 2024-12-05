@@ -1,0 +1,8 @@
+#+TITLE: w-lianfu.github.io
+#+AUTHOR: h5lianfu
+#+DATE: 2024-12-04
+#+EMAIL: h5lianfu@gmail.com
+#+OPTIONS: w-lianfu.github.io
+
+* ~~~ w-lianfu's blog ~~~
+  + [[w-lianfu.github.io]]
